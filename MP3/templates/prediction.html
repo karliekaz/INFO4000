@@ -1,0 +1,20 @@
+{% extends "index.html" %} 
+
+
+{% block content %} 
+    <div class="pred">
+        Type of Microorganism Prediction: {{prediction}}
+        <p>
+        
+        </p>
+        Probability: {{probability}}
+    </div>
+
+    <p>
+       
+        
+    </p>
+    <form>
+        <input type="button" value="Go back!" onclick="history.back()">
+       </form>
+{% endblock %}
