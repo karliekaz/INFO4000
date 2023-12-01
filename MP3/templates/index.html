@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>PredictApp</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
+
+    </head>
+
+    <body>
+        <div class="header">
+            <header>
+                <h2>Microorganism Classifier</h2>
+            </header>
+        </div>
+     
+        <div class="item-1">
+            <form action="/predict" method="POST" enctype=multipart/form-data>
+                    <h1>Upload an Image</h1>
+                    <input type=file name=file>
+                    <input type=submit value=Upload>
+            </form>
+        </div>
+
+
+
+        {% block content %}{% endblock %}  
+        
+        <script src="" async defer></script>
+    </body>
+</html>
