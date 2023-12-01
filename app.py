@@ -16,7 +16,7 @@ app = Flask(__name__)
 
 # Load the trained ViT model
 model = ViTForImageClassification.from_pretrained('google/vit-base-patch16-224', num_labels=8, ignore_mismatched_sizes=True)
-model.load_state_dict(torch.load('../Desktop/vit_model.pth'))
+model.load_state_dict(torch.load('MP3/vit_model.pth'))
 model.eval()
 
 class_names = ['Amoeba', 'Euglena', 'Hydra', 'Paramecium', 'Rod_bacteria', 'Spherical_bacteria', 'Spiral_bacteria', 'Yeast']
